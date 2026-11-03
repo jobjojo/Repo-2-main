@@ -1,0 +1,358 @@
+
+
+function GetGameConfigurations()
+
+	local p = {}
+
+	p["ServerIP"] = "192.168.1.236"
+  	--p["ServerIP"] = "47.92.82.141"
+       -- p["ServerIP"] = "127.0.0.1"
+	p["Port"] = "3724"
+
+	p["ServerVersion"] = "2.1.6"
+	p["ResVersion"] = "32586"
+
+
+	p["SystemLanguage"] = "en"
+	--p["SystemLanguage"] = "zh-Hans"
+	--p["SystemLanguage"] = "zh-Hant"
+
+	p["MinTouchDistance"] = 100	-- Pixel, base on 480*320
+	p["MaxTouchDistance"] = 250	-- Pixel, base on 480*320
+
+	--p["MinTouchSpeed"] = 200	-- Pixel / S, base on 480*320
+	--p["MaxTouchSpeed"] = 2500	-- Pixel / S, base on 480*320
+	p["MinBallSpeedTouchDistance"] = 40	-- Pixel, base on 480*320
+	p["MaxBallSpeedTouchDistance"] = 95	-- Pixel, base on 480*320
+	p["MinBallSpeed"] = 8/ 10	-- CM / MS
+
+	p["Att_MaxLevel"] = 99
+	p["RotSpeed_Max"] = 2000
+
+	p["Att_BallSpeed_0"] = 13 / 10	-- CM / MS
+	p["Att_BallSpeed_Max"] = 25/ 10	-- CM / MS
+	p["Att_BallColScale_0"] = 1	-- percent
+	p["Att_BallColScale_Max"] = 0.8	-- percent
+	p["Att_GKColScale_0"] = 0.9	-- percent
+	p["Att_GKColScale_Max"] = 1.2	-- percent
+	p["Att_GKColScaleTrembleMin_0"] = -0.3	-- percent
+	p["Att_GKColScaleTrembleMax_0"] = 0.01	-- percent
+	p["Att_GKColScaleTrembleMin_Max"] = -0.6	-- percent
+	p["Att_GKColScaleTrembleMax_Max"] = 0.01	-- percent
+	p["Att_GKLeaping_0"] = 5.5 / 10	-- CM / MS
+	p["Att_GKLeaping_Max"] = 8 / 10	-- CM / MS
+	--p["Att_BallTremble_0"] = 0.05	-- a factor per 0.1 CM / MS
+	--p["Att_BallTremble_Max"] = 0	-- a factor per 0.1 CM / MS
+	p["Att_CurveBall_0"] = 0.1	-- of ball speed
+	p["Att_CurveBall_Max"] = 0.45	-- of ball speed
+	p["Att_SpoonHeight_0"] = 10	-- CM, base on ground
+	p["Att_SpoonHeight_Max"] = 50	-- CM, base on crossbar
+	p["Att_Defence_Diff_Max"] = 20  -- max abs(shooter_attack - keeper_defence)
+
+	p["MaxTiredAtts"] = 0	-- percent
+
+	p["Dbg_Attack"] = -1	-- level
+	p["Dbg_Defense"] = -1	-- level
+	--p["Dbg_GKLeaping"] = -1	-- level
+	--p["Dbg_BallTremble"] = -1	-- level
+	p["Dbg_CurveBall"] = -1	-- level
+
+	p["MaxTPSampleTime"] = 500	-- (millisecond) max touch point sample time
+	p["MaxColScale"] = 1.2	-- max collision scale factor
+	p["PlayerGravity"] = 15 / 10000	-- CM / (MS^2), for GK jump
+	p["TouchTriggerRadius"] = 60	-- Pixel, base on 480*320
+	p["TouchMinDis"] = 10	-- Pixel, base on 480*320
+
+	p["BallGravity"] = 9.81 / 10000 * 0.5	-- CM / (MS^2)
+	p["SpoonBallGravity"] = 9.81 * 0.9/ 10000	-- CM / (MS^2)
+
+	p["BallTremble"] = 0.10	-- a factor per 0.1 CM / MS
+	p["TiredBallTremble"] = 0.30	-- a factor per 0.1 CM / MS
+	p["SnowBallTremble"] = 0.60	-- a factor per 0.1 CM / MS
+	p["BasicBallTremble"] = 0.03	-- a factor per 0.1 CM / MS
+
+	p["TrickyBallSpeed"] = 10 / 10	-- CM / MS
+	p["TrickyBallMapping"] = 0.3	-- CM / pixel
+	p["TrickyBallMinOffset"] = 20	-- Pixel / S
+
+	p["GKStandingHeight"] = 150	-- CM
+	p["GKSpreadHeight"] = 175	-- CM
+
+	p["ShoeSpeed"] = 17 / 10	-- CM / MS
+	p["ShoeMinDis"] = 100	-- CM
+
+	p["ShortJumpWidth"] = 300	-- CM
+
+	p["STItemTime"] = 8000	-- MS
+
+	p["STResultDelay"] = 800	-- MS
+	p["GKResultDelay"] = 800	-- MS
+
+	p["FloorReboundDecayZ"] = 0.75	-- scale factor 0~1
+	p["BlockReboundDecay"] = 0.45	-- scale factor 0~1
+	p["ReboundBackNetSpeedX"] = -0.05	-- cm/ms
+	p["ReboundBackNetSpeedScaleY"] = 0.5	-- scale factor 0~1
+	p["RotateSpeedShootDirect"] = 10	-- rotate speed if not a direct ball   angle/per physics frame
+	p["RotateSpeedCollideNet"] = 10	-- rotate speed if collide net
+	p["RotateSpeedShootCurve"] = 0.00006	-- rotate speed of curve ball
+
+	p["MaxBigGloveModelScale"] = 2.0
+	p["MaxBigGloveColScale"] = 4.0
+
+	p["EasyGoalWidth"] = 100	-- CM
+	p["EasyGoalHeight"] = 100	-- CM
+	p["EasyBallSpeed"] = 10.5 / 10	-- CM / MS
+
+	p["FireBallSpeed"] = 21 / 10	-- CM / MS
+
+	p["NormalBallMaxHeight"] = 120	-- CM
+	p["NormalBallCurveFactor"] = 0.9	-- percent, for max angle (90)
+
+	p["SpoonBallHeightTremble"] = 30	-- CM
+	p["SpoonBallMinDis"] = 300	-- CM
+
+	p["DrinksBallSpeed"] = 18 / 10	-- CM / MS
+	p["DrinksBallColScale"] = 0.5
+	p["DrinksGKColScale"] = 2.0
+	p["DrinksLastRoundCnt"] = 2
+
+	p["TouchTrackWidth"] = 20	-- Pixel, base on 480*320
+	p["TouchTrackFadeoutTime"] = 600	-- MS
+	p["BallTrackFadeoutTime"] = 500	-- MS
+	p["BallTrackFadeoutTimeCurvePlus"] = 1/300
+
+	p["BanannaBallTrackFadeoutTime"] = 1500	-- MS
+
+	p["BanannaItemFactor"] = 0.65	-- of ball speed
+	p["BananaBallSpeed"] = 12 / 10	-- CM / MS
+	p["BananaYSpdFactor"] = 1
+
+	p["CloseToGoalDis"] = 300	-- CM
+
+	p["MinCtrlDeg"] = 15	-- Degree
+	p["RotCtrlDeg"] = 90	-- Degree
+	p["MinCtrlDis"] = 20	-- Pixel, base on 480*320
+
+	p["SpeedSlotIncTime"] = 500	-- MS
+	p["FightCountDownTime"] = 5	-- S
+
+	p["NewsSpeed"] = 50	-- Pixel / S, base on 480*320
+	p["CoinSpeed"] = 1000	-- Point / S
+	p["MedalSpeed"] = 1000	-- Point / S
+	p["FansSpeed"] = 300	-- Point / S
+	p["ExperienceSpeed"] = 1000	-- Point / S
+
+	p["RobReflexMin"] = 900	-- MS
+	p["RobReflexMax"] = 100	-- MS
+	p["RobReflexStep"] = -16	-- MS
+
+	p["RobAccuracyMin"] = 150	-- CM
+	p["RobAccuracyMax"] = 20	-- CM
+	p["RobAccuracyStep"] = -2.6	-- CM
+
+	p["RobTimingMin"] = 300	-- MS
+	p["RobTimingMax"] = 50	-- MS
+	p["RobTimingStep"] = -5	-- MS
+
+	p["RobSpoonMin"] = 0	-- percent
+	p["RobSpoonMax"] = 25	-- percent
+	p["RobSpoonStep"] = 1	-- percent
+
+	p["RobBanannaMin"] = 0	-- percent
+	p["RobBanannaMax"] = 0.75	-- percent
+	p["RobBanannaStep"] = 0.02	-- percent
+
+	p["RobShoesReflex"] = 1.03	-- percent
+	p["RobShoesAccuracy"] = 1	-- percent
+	p["RobShoesTiming"] = 1	-- percent
+
+	p["RobTomatoReflex"] = 1	-- percent
+	p["RobTomatoAccuracy"] = 1.02	-- percent
+	p["RobTomatoTiming"] = 1	-- percent
+
+	p["RobFireballReflex"] = 1	-- percent
+	p["RobFireballAccuracy"] = 1.05 -- percent
+	p["RobFireballTiming"] = 1.1	-- percent
+
+	p["RobDrinksReflex"] = 1.03	-- percent
+	p["RobDrinksAccuracy"] = 1.03	-- percent
+	p["RobDrinksTiming"] = 1.03	-- percent
+
+	p["RobBananaReflex"] = 1	-- percent
+	p["RobBananaAccuracy"] = 1.03	-- percent
+	p["RobBananaTiming"] = 1.1	-- percent
+
+	p["RobDebugLevel"] = 1
+
+	p["GKTouchTriggerWidth"] = 480	-- Pixel, base on 480*320
+	p["GKTouchTriggerHeight"] =320	-- Pixel, base on 480*320
+
+	p["GKMaxSlideScale"] = 3 --
+	p["GKMinSlideDis"] = 100 --
+	p["GKMaxSlideDis"] = 200 --
+
+	p["GKTargetMinX"] = -320	-- cm
+	p["GKTargetMaxX"] = 290	-- cm
+	p["GKTargetMinY"] = 10	-- cm
+	p["GKTargetMaxY"] = 300	-- cm
+
+
+
+
+
+
+	p["DebugBallSpd"] = 17 / 10
+	p["DebugTargetY"] = 300
+	p["DebugTargetZ"] = 280
+
+	p["StandPriority_1"] = 8000
+	p["StandPriority_2"] = 10000
+	p["StandPriority_3"] = 6000
+	p["StandPriority_4"] = 6000
+	p["StandPriority_5"] = 23000
+	p["StandPriority_6"] = 6000
+	p["StandPriority_7"] = 1000
+	p["StandPriority_8"] = 900
+	p["StandPriority_9"] = 800
+	p["StandPriority_10"] = 700
+	p["StandPriority_11"] = 600
+	p["StandPriority_12"] = 500
+	p["StandPriority_13"] = 10
+	p["StandPriority_14"] = 10
+	p["StandPriority_15"] = 10
+	p["StandPriority_16"] = 1000
+	p["StandPriority_17"] = 900
+	p["StandPriority_18"] = 800
+	p["StandPriority_19"] = 700
+	p["StandPriority_20"] = 600
+	p["StandPriority_21"] = 10
+
+	p["DebugMyFans"] = 0
+	p["DebugOppFans"] = 0
+
+	p["StadiumBGSFX1"] = 9000
+	--p["StadiumBGSFX2"] = 8000
+
+	p["MaxEndurance"] = 6
+
+	p["MaxCoinIncTime"] = 1000	-- MS
+	p["MaxFansIncTime"] = 1000	-- MS
+	p["MaxExpIncTime"] = 1000	-- MS
+
+	p["CreditsScrollSpeed"] = 100	-- Pixel / S, base on 480*320
+
+	p["InitPlayerResCount"] = 9
+
+	p["MainMenuScrollFactor"] = 2
+	p["MainMenuDecelerateFactor"] = 0.9	-- mast less than 1
+
+	p["MainMenuRollbackSpeed"] = 5 / 10	-- CM / MS
+	p["MainMenuFocusSpeed"] = 5 / 10	-- CM / MS
+
+	p["RandomOppR"] = 23
+	p["RandomOppG"] = 10
+	p["RandomOppB"] = 2
+	p["RandomOppA"] = 255
+
+	p["DefaultRandOppCnt"] = 5
+
+	p["LabelFadeoutPos"] = 3 / 4	-- percent of screen width
+
+	p["RequestOppInterval"] = 3000	-- MS
+
+	p["FansFactor"] = 0.05
+	p["FullFansCount"] = 20000
+
+	p["GameCenterAccount"] = ""
+
+	p["RobotMinItemOdds"] = 30
+	p["RobotMaxItemOdds"] = 60
+
+	p["BossMinItemOdds"] = 50
+	p["BossMaxItemOdds"] = 90
+
+	p["LandingRollHeight"] = 80	--CM
+	p["LandingRollSpeed"] = 0.3	-- CM / MS
+
+	p["TutorialShootingY"] = 150	--CM
+	p["TutorialShootingZ"] = 200	-- CM
+	p["TutorialGKeepingLevel"] = -10	-- level
+	p["SpoonTutorialShootingY"] = 20	--CM
+	p["SpoonTutorialShootingZ"] = 100	-- CM
+
+	p["ChallengeProtectionTime"] = 5000	-- MS
+
+	p["RouletteCount"] = 60
+	p["RouletteTime"] = 6000	-- MS
+
+	p["AchievementBannerTime"] = 1800	-- MS
+
+	p["LastNewsCount"] = 5
+	p["AgeSensitive"] = 0
+	p["AndroidClothName"] = "cloth131"
+	p["BirdBallFaceTo"] = 0.8
+	p["MaxSnowBallUsage"] = 3
+
+
+	p["ArcBallAngleThreadhold"] = 15   --°
+	p["ArcBallMaxHorAcc"] =0.17     --cm/ms²
+	p["ArcBallMinHorAcc"] = 0       --cm/ms²
+	p["ArcBallMaxAcCbAngle"] = 160  --°
+   	p["MaxBallTremble"] = 0.17632
+  	p["MinBallTremble"] =0
+
+	--new shoot
+	p["minElevationAngle"] =18 --°
+  	p["MaxHorRightAcc"]   = 0.8
+	p["MaxHorLeftAcc"]  =0.8
+	p["MaxBallSpeed_CurvCtrl"] = 25/ 10	-- CM / MS
+	p["PowerSliderFullTime"] = 1          -- s
+	p["BallMaxRotateSpeed"] =150    --°/s
+	p["AccFloorReboundDecaY"] =0.5  -- scale factor
+	p["ArrowSwingExtraAngle"] = 20    -- °
+	p["ArrowOnceSwingTime"] = 3.5   -- s  left-->right
+	p["PowerSliderMaxBendAngle"] = 12 -- °
+	p["PowerSliderMaxScale"] = 1.15
+	p["AjustPowerMaxTime"] =0.2        -- s
+	
+	p["AjustPowerSensitivity"] = 2.2
+	p["PowerTooHighSkewingAngle"] = 100 -- °
+
+	--Barrier ability instance
+        p["BarrierDist"] = 9.15   -- m
+        p["BarrierNum"] = 1
+        p["BarrierSpd"] = 0   -- CM / MS
+        p["BarrierAni"] = "freekick_wall_jump"
+        p["AniDist"] = 1   -- m      distance requirement to play animation
+        p["AniHeight"] = 1.7   -- m      ball height requirement to play animation
+
+	--UIFX ability instance		-- minus means random and the number is the proportion of random limit to standard value
+        p["UIFXPlayTime"] = 10   -- s		Effect last time
+        p["UIFXMoveTime"] = 3   -- s		movemont last time
+        p["UIFXNum"] = 10   -- 		number of images
+        p["UIFXScale"] = 1   -- 		scale of images
+        p["UIFXTransp"] = 1   -- 		Transparency of images
+        p["UIFXDir"] = 180   --°		angle of movement direction, up is 0
+        p["UIFXDist"] = 0.1    --		movement distance / height of screen size
+        p["UIFXInitX"] = 0    --		x value of initial position
+        p["UIFXInitY"] = 0    --		y value of initial position
+        p["UIFXAni"] = "TomatoBomb"   --	Animation before movement
+
+	-- stats
+        p["Stat_Passion"] = 30
+        p["Stat_MaxPassion"] = 100
+
+	-- paras
+    local Param1 = 0
+	local Param2 = 0
+	local Param3 = 0
+	local Param4 = 0
+	local Param5 = 0
+	local Param6 = 0
+	local Param7=0
+	local Param8=0
+	local Param9=0
+	local AnimationName=0
+
+	 --expression str
+	 --eg.    p.Jumping = p.Jumping + 2

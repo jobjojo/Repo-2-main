@@ -1,0 +1,1151 @@
+{
+	"m_CompileInfo": {
+		"m_HasFixedFunctionShaders": false,
+		"m_HasSurfaceShaders": false,
+		"m_MeshComponentsFromSnippets": 0,
+		"m_Snippets": []
+	},
+	"m_CompressedBlob": "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",
+	"m_CompressedLengths": [
+		1037,
+		1139
+	],
+	"m_CorrespondingSourceObject": { "m_Collection": "9e6f2a9160b553e419337323406682c5", "m_PathID": 0 },
+	"m_DecompressedLengths": [
+		4040,
+		5140
+	],
+	"m_DefaultTextures": {},
+	"m_Dependencies": [],
+	"m_HideFlags": 0,
+	"m_Name": "UI/Unlit/Flowlight2",
+	"m_NonModifiableTextures": {},
+	"m_Offsets": [
+		0,
+		1037
+	],
+	"m_ParsedForm": {
+		"m_CustomEditorName": "",
+		"m_Dependencies": [],
+		"m_DisableNoSubshadersMessage": false,
+		"m_FallbackName": "",
+		"m_Name": "UI/Unlit/Flowlight2",
+		"m_PropInfo": {
+			"m_Props": [
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "white",
+						"m_TexDim": 2
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Sprite Texture",
+					"m_Flags": 2,
+					"m_Name": "_MainTex",
+					"m_Type": 4
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 1,
+					"m_DefValue_1_": 1,
+					"m_DefValue_2_": 1,
+					"m_DefValue_3_": 1,
+					"m_Description": "Tint",
+					"m_Flags": 0,
+					"m_Name": "_Color",
+					"m_Type": 0
+				},
+				{
+					"m_Attributes": [
+						"MaterialToggle"
+					],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Pixel snap",
+					"m_Flags": 0,
+					"m_Name": "PixelSnap",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "white",
+						"m_TexDim": 2
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Add Move Texture",
+					"m_Flags": 0,
+					"m_Name": "_FlowlightTex",
+					"m_Type": 4
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 1,
+					"m_Description": "Flowlight Color",
+					"m_Flags": 0,
+					"m_Name": "_FlowlightColor",
+					"m_Type": 0
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 1,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Power",
+					"m_Flags": 0,
+					"m_Name": "_Power",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 1,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "SpeedX",
+					"m_Flags": 0,
+					"m_Name": "_SpeedX",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "StartTime",
+					"m_Flags": 0,
+					"m_Name": "_StartTime",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 8,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Stencil Comparison",
+					"m_Flags": 0,
+					"m_Name": "_StencilComp",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Stencil ID",
+					"m_Flags": 0,
+					"m_Name": "_Stencil",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 0,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Stencil Operation",
+					"m_Flags": 0,
+					"m_Name": "_StencilOp",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 255,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Stencil Write Mask",
+					"m_Flags": 0,
+					"m_Name": "_StencilWriteMask",
+					"m_Type": 2
+				},
+				{
+					"m_Attributes": [],
+					"m_DefTexture": {
+						"m_DefaultName": "",
+						"m_TexDim": 1
+					},
+					"m_DefValue_0_": 255,
+					"m_DefValue_1_": 0,
+					"m_DefValue_2_": 0,
+					"m_DefValue_3_": 0,
+					"m_Description": "Stencil Read Mask",
+					"m_Flags": 0,
+					"m_Name": "_StencilReadMask",
+					"m_Type": 2
+				}
+			]
+		},
+		"m_SubShaders": [
+			{
+				"m_LOD": 0,
+				"m_Passes": [
+					{
+						"m_HasInstancingVariant": false,
+						"m_HasProceduralInstancingVariant": false,
+						"m_Name": "",
+						"m_NameIndices": {
+							"PIXELSNAP_ON": 0
+						},
+						"m_ProgDomain": {
+							"m_SubPrograms": []
+						},
+						"m_ProgFragment": {
+							"m_SubPrograms": [
+								{
+									"m_BlobIndex": 2,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 2,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 2,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 2,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 2,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 2,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 3,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 3,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 3,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 3,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 3,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 3,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 0
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								}
+							]
+						},
+						"m_ProgGeometry": {
+							"m_SubPrograms": []
+						},
+						"m_ProgHull": {
+							"m_SubPrograms": []
+						},
+						"m_ProgramMask": 6,
+						"m_ProgVertex": {
+							"m_SubPrograms": [
+								{
+									"m_BlobIndex": 0,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 0,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 0,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 0,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 0,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 0,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 1,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 1,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 1,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 5,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 1,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 0,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 1,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 1,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								},
+								{
+									"m_BlobIndex": 1,
+									"m_BufferParams": [],
+									"m_Channels": {
+										"m_Channels": [],
+										"m_SourceMap": 25
+									},
+									"m_ConstantBufferBindings": [],
+									"m_ConstantBuffers": [],
+									"m_GpuProgramType": 4,
+									"m_KeywordIndices": [
+										0
+									],
+									"m_MatrixParams": [],
+									"m_Samplers": [],
+									"m_ShaderHardwareTier": 2,
+									"m_ShaderRequirements": 33,
+									"m_TextureParams": [],
+									"m_UAVParams": [],
+									"m_VectorParams": []
+								}
+							]
+						},
+						"m_State": {
+							"m_AlphaToMask": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 0
+							},
+							"m_Culling": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 0
+							},
+							"m_FogColor": {
+								"m_Name": "unity_FogColor",
+								"m_W": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_X": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_Y": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_Z": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								}
+							},
+							"m_FogDensity": {
+								"m_Name": "unity_FogDensity",
+								"m_Value": 0
+							},
+							"m_FogEnd": {
+								"m_Name": "unity_FogEnd",
+								"m_Value": 0
+							},
+							"m_FogMode": -1,
+							"m_FogStart": {
+								"m_Name": "unity_FogStart",
+								"m_Value": 0
+							},
+							"m_GpuProgramID": 4954,
+							"m_Lighting": false,
+							"m_LOD": 0,
+							"m_Name": "",
+							"m_OffsetFactor": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 0
+							},
+							"m_OffsetUnits": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 0
+							},
+							"m_RtBlend0": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 10
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 10
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend1": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend2": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend3": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend4": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend5": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend6": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtBlend7": {
+								"m_BlendOp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_BlendOpAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ColMask": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 15
+								},
+								"m_DestinationBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_DestinationBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_SourceBlend": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								},
+								"m_SourceBlendAlpha": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 1
+								}
+							},
+							"m_RtSeparateBlend": false,
+							"m_StencilOp": {
+								"m_Comp": {
+									"m_Name": "_StencilComp",
+									"m_Value": 0
+								},
+								"m_Fail": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_Pass": {
+									"m_Name": "_StencilOp",
+									"m_Value": 0
+								},
+								"m_ZFail": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								}
+							},
+							"m_StencilOpBack": {
+								"m_Comp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 8
+								},
+								"m_Fail": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_Pass": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ZFail": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								}
+							},
+							"m_StencilOpFront": {
+								"m_Comp": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 8
+								},
+								"m_Fail": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_Pass": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								},
+								"m_ZFail": {
+									"m_Name": "\u003cnoninit\u003e",
+									"m_Value": 0
+								}
+							},
+							"m_StencilReadMask": {
+								"m_Name": "_StencilReadMask",
+								"m_Value": 0
+							},
+							"m_StencilRef": {
+								"m_Name": "_Stencil",
+								"m_Value": 0
+							},
+							"m_StencilWriteMask": {
+								"m_Name": "_StencilWriteMask",
+								"m_Value": 0
+							},
+							"m_Tags": {
+								"m_Tags": {
+									"CanUseSpriteAtlas": "true",
+									"IGNOREPROJECTOR": "true",
+									"PreviewType": "Plane",
+									"QUEUE": "Transparent",
+									"RenderType": "Transparent"
+								}
+							},
+							"m_ZClip": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 1
+							},
+							"m_ZTest": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 4
+							},
+							"m_ZWrite": {
+								"m_Name": "\u003cnoninit\u003e",
+								"m_Value": 0
+							}
+						},
+						"m_Tags": {
+							"m_Tags": {}
+						},
+						"m_TextureName": "",
+						"m_Type": 0,
+						"m_UseName": ""
+					}
+				],
+				"m_Tags": {
+					"m_Tags": {
+						"CanUseSpriteAtlas": "true",
+						"IGNOREPROJECTOR": "true",
+						"PreviewType": "Plane",
+						"QUEUE": "Transparent",
+						"RenderType": "Transparent"
+					}
+				}
+			}
+		]
+	},
+	"m_Platforms": [
+		5,
+		9
+	],
+	"m_PrefabInternal": { "m_Collection": "9e6f2a9160b553e419337323406682c5", "m_PathID": 0 },
+	"m_ShaderIsBaked": true
+}
